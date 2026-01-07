@@ -1,22 +1,51 @@
 # extract-inline-style
 
-**Extract inline `style="..."` attributes from HTML elements, deduplicate them, and move them to an external CSS file.**
+**Turn spaghetti code into clean code instantly. Extracts inline `style="..."` attributes, deduplicates them into atomic classes, and cleans your HTML.**
 
-<p>
-  <a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/npm/v/extract-inline-style.svg?style=flat-square&color=d25353" alt="npm version"></a>
-  <!--<a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/bundlephobia/minzip/extract-inline-style?style=flat-square&color=38bd24" alt="size"></a>-->
-  <a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/npm/dt/extract-inline-style.svg?style=flat-square&color=38bd24" alt="npm downloads"></a>
-  <a href="https://github.com/mgks/extract-inline-style/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mgks/extract-inline-style.svg?style=flat-square&color=blue" alt="license"></a>
-</p>
+[![npm version](https://img.shields.io/npm/v/extract-inline-style.svg?style=flat-square&color=d25353)](https://www.npmjs.com/package/extract-inline-style)
+[![npm downloads](https://img.shields.io/npm/dt/extract-inline-style.svg?style=flat-square&color=38bd24)](https://www.npmjs.com/package/extract-inline-style?activeTab=versions)
+[![npm version](https://img.shields.io/github/license/mgks/extract-inline-style.svg?style=flat-square&color=blue)](https://github.com/mgks/extract-inline-style/blob/main/LICENSE)
+
+<img width="720" src="https://github.com/mgks/extract-inline-style/blob/main/preview.gif?raw=true">
+
+**Pain Point:**
+You have a legacy HTML file, an email template, or scraped content. It looks like this:
+```html
+<div style="font-size: 14px; color: #fff; margin-bottom: 10px;">Hello</div>
+<div style="font-size: 14px; color: #333; margin-bottom: 10px;">World</div>
+<div style="font-size: 14px; color: #555; margin-bottom: 10px;">!</div>
+```
+It's unreadable. It's bloated. It's impossible to maintain.
+
+**The Solution:**
+Run `npx extract-inline-style index.html`. The tool analyzes your code and:
+
+1.  **Surgically Removes** the inline styles.
+2.  **Deduplicates** them (Compression). It sees those 3 divs are identical.
+3.  **Generates** a single, semantic class.
+4.  **Injects** the stylesheet link automatically.
+5.  **Backs up** your original file (just in case).
+
+**The Result:**
+```html
+<head>
+  <link rel="stylesheet" href="./index-extracted.css">
+</head>
+<body>
+  <div class="eis-div-1">Hello</div>
+  <div class="eis-div-1">World</div>
+  <div class="eis-div-1">!</div>
+</body>
+```
+*Your file size just dropped, and your sanity just increased.*
 
 ## Features
 
-*   **Automated Extraction:** Instantly rips `style="..."` attributes from HTML elements and moves them to an external CSS file.
-*   **Smart Compression:** Deduplicates identical styles automatically. (e.g., 50 `<div>`s with the same style become 1 single CSS class).
-*   **Semantic Naming:** Generates readable class names based on the tag (e.g., `eis-div-1`, `eis-span-2`) instead of random hashes.
-*   **Auto-Injection:** Automatically appends the correct `<link rel="stylesheet">` tag to your HTML head.
-*   **Safety First:** Creates an automatic backup (`.original.html`) before modifying your files, so you never lose data.
-*   **API & CLI:** Use it as a command-line tool for quick fixes or import the API for build pipelines.
+*   **Universal Parser:** Works on HTML files, fragments, and even HTML embedded in Markdown.
+*   **Smart Compression:** 1,000 elements with the same style = **1 CSS Class**.
+*   **Semantic Naming:** Classes are named by tag (e.g., `eis-button-1`, `eis-span-2`) for easy debugging.
+*   **Safety First:** Automatic `.original.html` backups. Never lose data.
+*   **API Ready:** Perfect for content pipelines and static site generators.
 
 ## Installation
 
@@ -30,10 +59,10 @@ npm install extract-inline-style
 
 ```bash
 # Auto-generate CSS filename (index-extracted.css)
-$ npx extract-inline-style index.html
+npx extract-inline-style index.html
 
 # Specify output CSS filename
-$ npx extract-inline-style index.html my-styles.css
+npx extract-inline-style index.html my-styles.css
 ```
 
 #### CLI Options
