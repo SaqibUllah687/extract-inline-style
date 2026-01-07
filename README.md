@@ -1,6 +1,6 @@
 # extract-inline-style
 
-Extract inline `style="..."` attributes from HTML elements, deduplicate them, and move them to an external CSS file.
+**Extract inline `style="..."` attributes from HTML elements, deduplicate them, and move them to an external CSS file.**
 
 <p>
   <a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/npm/v/extract-inline-style.svg?style=flat-square&color=d25353" alt="npm version"></a>
