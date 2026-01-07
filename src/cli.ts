@@ -48,11 +48,9 @@ if (!rawInput || rawInput.startsWith('-')) {
 	process.exit(1);
 }
 
-// TypeScript needs to know this is definitely a string now
 const inputHtmlPath: string = rawInput;
 
 // Auto-generate CSS filename if not provided
-// index.html -> index-extracted.css
 let outputCssPath: string;
 const rawOutput = args[1];
 
@@ -67,7 +65,6 @@ if (!rawOutput || rawOutput.startsWith('-')) {
 let classPrefix = 'eis-';
 const prefixIndex = args.indexOf('--prefix') !== -1 ? args.indexOf('--prefix') : args.indexOf('-p');
 if (prefixIndex !== -1 && args[prefixIndex + 1]) {
-	// FIX: Use ! to tell TypeScript we are sure this exists because of the check above
 	classPrefix = args[prefixIndex + 1]!;
 }
 
@@ -92,9 +89,10 @@ try {
 
 	// --- Safety Backup ---
 	if (!skipBackup) {
-		const backupPath = inputHtmlPath.replace('.html', '.original.html');
-		// Handle case where extension isn't .html
-		const finalBackupPath = backupPath === inputHtmlPath ? `${inputHtmlPath}.original` : backupPath;
+		const parsedPath = path.parse(inputHtmlPath);
+		// Logic: /path/to/file.html -> /path/to/file.original.html
+		// Logic: /path/to/README.md -> /path/to/README.original.md
+		const finalBackupPath = path.join(parsedPath.dir, `${parsedPath.name}.original${parsedPath.ext}`);
 		
 		fs.writeFileSync(finalBackupPath, htmlContent);
 		console.log(`🛡️  Backup created: ${finalBackupPath}`);
