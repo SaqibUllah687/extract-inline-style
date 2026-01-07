@@ -1,6 +1,6 @@
 {
   "name": "extract-inline-style",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extracts inline style attributes (style=\"...\") from HTML elements, moves them to an external CSS file, and deduplicates identical styles.",
   "type": "module",
   "bin": {
