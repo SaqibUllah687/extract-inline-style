@@ -4,7 +4,7 @@
 
 <p>
   <a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/npm/v/extract-inline-style.svg?style=flat-square&color=d25353" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/bundlephobia/minzip/extract-inline-style?style=flat-square&color=38bd24" alt="size"></a>
+  <!--<a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/bundlephobia/minzip/extract-inline-style?style=flat-square&color=38bd24" alt="size"></a>-->
   <a href="https://www.npmjs.com/package/extract-inline-style"><img src="https://img.shields.io/npm/dt/extract-inline-style.svg?style=flat-square&color=38bd24" alt="npm downloads"></a>
   <a href="https://github.com/mgks/extract-inline-style/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mgks/extract-inline-style.svg?style=flat-square&color=blue" alt="license"></a>
 </p>
