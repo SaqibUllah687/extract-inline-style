@@ -15,7 +15,7 @@ You have a legacy HTML file, an email template, or scraped content. It looks lik
 <div style="font-size: 14px; color: #333; margin-bottom: 10px;">World</div>
 <div style="font-size: 14px; color: #555; margin-bottom: 10px;">!</div>
 ```
-It's unreadable. It's bloated. It's impossible to maintain.
+*It's unreadable. It's bloated. It's impossible to maintain.*
 
 **The Solution:**
 Run `npx extract-inline-style index.html`. The tool analyzes your code and:
